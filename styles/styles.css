@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#000000));
+  background: linear-gradient(white, #000000);
+}
+
+.container {
+  width: 800px;
+  height: 450px;
+  padding: 50px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0 15px 25px rgba(50, 50, 50, 0.15);
+          box-shadow: 0 15px 25px rgba(50, 50, 50, 0.15);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dice-wrapper {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+p {
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+
+button {
+  position: absolute;
+  top: 350px;
+  background-color: black;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 15px 0;
+  width: 150px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#human {
+  position: absolute;
+  left: 170px;
+  top: 200px;
+  text-align: center;
+  padding: 15px 0;
+  width: 150px;
+}
+
+#computer {
+  position: absolute;
+  right: 170px;
+  top: 200px;
+  text-align: center;
+  padding: 15px 0;
+  width: 150px;
+}
+
+.shake {
+  -webkit-animation: shake 0.5s infinite;
+          animation: shake 0.5s infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  50% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  100% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  50% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  100% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
